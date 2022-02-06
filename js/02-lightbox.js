@@ -23,10 +23,9 @@ gallery.insertAdjacentHTML("afterbegin", galleryMarkup);
 
 gallery.addEventListener("click", onGalleryElemClick);
 
-let lightbox = null
+let lightbox = new SimpleLightbox('.gallery a', {captionsData: "alt", captionDelay: 250});
 
 function onGalleryElemClick(e) {
     e.preventDefault();
-    const origImg = e.target.dataset.source;
-lightbox = SimpleLightbox("a")
 }
+
